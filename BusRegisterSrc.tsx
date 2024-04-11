@@ -69,7 +69,7 @@ function RegisterSection(p: any) {
       />
 
       <View style={{}}>
-        <Text style={sty.inputTextid}>Bus Route</Text>
+        <Text style={sty.inputTextid}>Bank Name</Text>
         <RoutesMenu nameArray={banks} placeHolder={'Select Bank'} />
       </View>
       <InputFieldSection
