@@ -10,8 +10,7 @@ const BusRegister = (a: any) => {
   const stack = a.navigation;
   return (
     <View style={sty.container}>
-      <Text
-        style={sty.headerText}>
+      <Text style={sty.headerText}>
         {'Bus\nRegistation'}
       </Text>
       <KeyboardAwareScrollView keyboardShouldPersistTaps={'never'}>
@@ -110,14 +109,15 @@ function InputFieldSection(p: any) {
 
 const sty = StyleSheet.create({
   container:{
-    flex: 1, backgroundColor: 'white'
+    flex: 1, 
+    backgroundColor: 'white'
   },
   headerText:{
-     fontSize: 45,
-          color: 'blue',
-          fontWeight: '700',
-          marginTop: 100,
-          marginLeft: 20,
+    fontSize: 45,
+    color: 'blue',
+    fontWeight: '700',
+    marginTop: 100,
+    marginLeft: 20,
   },
   inputTextid: {
     fontSize: 18,
