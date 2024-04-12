@@ -9,15 +9,9 @@ import {ScrollView} from 'react-native-gesture-handler';
 const BusRegister = (a: any) => {
   const stack = a.navigation;
   return (
-    <View style={{flex: 1, backgroundColor: 'white'}}>
+    <View style={sty.container}>
       <Text
-        style={{
-          fontSize: 45,
-          color: 'blue',
-          fontWeight: '700',
-          marginTop: 100,
-          marginLeft: 20,
-        }}>
+        style={sty.headerText}>
         {'Bus\nRegistation'}
       </Text>
       <KeyboardAwareScrollView keyboardShouldPersistTaps={'never'}>
@@ -115,6 +109,16 @@ function InputFieldSection(p: any) {
 }
 
 const sty = StyleSheet.create({
+  container:{
+    flex: 1, backgroundColor: 'white'
+  },
+  headerText:{
+     fontSize: 45,
+          color: 'blue',
+          fontWeight: '700',
+          marginTop: 100,
+          marginLeft: 20,
+  },
   inputTextid: {
     fontSize: 18,
     color: 'black',
